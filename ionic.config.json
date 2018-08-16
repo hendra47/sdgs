@@ -1,0 +1,7 @@
+{
+  "name": "sdgs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
