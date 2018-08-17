@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import target from "../../data/target";
+import { ReducerProvider } from '../../providers/reducer/reducer';
 
 /**
  * Generated class for the TargetPage page.
@@ -14,8 +16,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'target.html',
 })
 export class TargetPage {
+  list:any=[];
+  constructor(public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+   
+    let ID = this.service.getId();
+    this.list = target.filter(function (el) {
+      return el.id == ID;
+    });
+    if(this.list.length > 0){
+      this.list= this.list[0].list;
+    }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {

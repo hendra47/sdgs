@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import fact from "../../data/fact";
+import { ReducerProvider } from '../../providers/reducer/reducer';
 /**
  * Generated class for the FactPage page.
  *
@@ -14,8 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'fact.html',
 })
 export class FactPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  list:any=[];
+  constructor(public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+    let ID = this.service.getId();
+    this.list = fact.filter(function (el) {
+      return el.id == ID;
+    });
+    if(this.list.length > 0){
+      this.list= this.list[0].list;
+    }
   }
 
   ionViewDidLoad() {

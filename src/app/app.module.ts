@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MyApp } from './app.component';
+import { ReducerProvider } from '../providers/reducer/reducer';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MyApp } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ReducerProvider
   ]
 })
 export class AppModule {}

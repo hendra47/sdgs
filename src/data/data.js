@@ -100,4 +100,5 @@ let list = [{
                 subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
                 color:'#17476B'
             }]
+
 export default list;
