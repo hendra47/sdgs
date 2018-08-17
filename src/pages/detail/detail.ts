@@ -30,7 +30,7 @@ export class DetailPage {
     });
     let color = this.navParams.get("item").color;
     this.platform.ready().then(() => {
-          statusBar.backgroundColorByHexString(color);
+          this.statusBar.backgroundColorByHexString(color);
     });
   }
 
