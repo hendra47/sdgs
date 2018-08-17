@@ -15,9 +15,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.488aff
       // statusBar.overlaysWebView(false);
       if(platform.is('ios')){
-        statusBar.backgroundColorByHexString('#3b96be');
+        statusBar.backgroundColorByHexString('#2335d3');
       }else{
-        statusBar.backgroundColorByHexString('#3b96be');
+        statusBar.backgroundColorByHexString('#2335d3');
       }
       statusBar.styleDefault();
       splashScreen.hide();
