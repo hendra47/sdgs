@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <div class="flex">
+        <img src="assets/icon/header_logo.png" class="header-icon">
+        <ion-title>Sustainable development goals</ion-title>
+      </div>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+  <div *ngFor="let item of arrList" class="item" [ngStyle]="{'background-color': item.color}">
+    <p class="list-item">{{ item.id }} {{ item.title }} </p>
+  </div>
+  </ion-content>
+  
