@@ -1,7 +1,7 @@
 import { Component,NgZone } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,Platform } from 'ionic-angular';
 import list from "../../data/data";
-
+import { StatusBar } from '@ionic-native/status-bar';
 /**
  * Generated class for the DetailPage page.
  *
@@ -21,12 +21,16 @@ export class DetailPage {
   tab1Root = "TargetPage";
   tab2Root = "IndicatorPage";
   tab3Root = "FactPage";
-  constructor( private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
+  constructor( private platform: Platform,private statusBar: StatusBar,private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
   
     this._zone.run(() =>{
       this.detail=this.navParams.get("item");
       this.icon="assets/imgs/logos"+this.detail.id+".png"; 
       this.arrColor=list;       
+    });
+    let color = this.navParams.get("item").color;
+    this.platform.ready().then(() => {
+          statusBar.backgroundColorByHexString(color);
     });
   }
 
