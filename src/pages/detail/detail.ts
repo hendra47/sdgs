@@ -18,6 +18,9 @@ export class DetailPage {
   detail:any;
   icon:any;
   arrColor:any=[];
+  tab1Root = "TargetPage";
+  tab2Root = "IndicatorPage";
+  tab3Root = "FactPage";
   constructor( private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
   
     this._zone.run(() =>{
