@@ -1,0 +1,22 @@
+
+<ion-header [ngStyle]="{'background': detail?.color}">
+  <ion-navbar [ngStyle]="{'background': detail?.color}">
+    <div class="flex">
+        <img [src]="icon" class="header-icon">
+        <p class="judul">{{ detail?.title }}</p>
+    </div>
+  </ion-navbar>
+  <div class="line">
+      <div *ngFor="let color of arrColor" class="kotak" [ngStyle]="{'background-color': color?.color}">
+        &nbsp;
+      </div>
+  </div>
+  <div class="sub" [ngStyle]="{'background': detail?.color}">
+    <p class="subtitle">{{detail?.subtitle}}</p>
+  </div>
+</ion-header>
+
+
+<ion-content>
+
+</ion-content>

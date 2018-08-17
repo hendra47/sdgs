@@ -2,12 +2,14 @@ page-list {
     .header-icon{
         width: 45px;
         height: 40px;
-        margin-left: 16px;
+        margin:0px;
+        padding: 0px;
     }
     .flex{
         display: flex;
         height: 100%;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 16px;
         align-items: center;
     }
     .item{
@@ -22,4 +24,13 @@ page-list {
         margin-left: 16px;
         font-size: 18px;
     }
+    .judul{
+        color:white;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 8px;
+        overflow: hidden;
+    }  
 }

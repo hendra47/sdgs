@@ -17,5 +17,9 @@ export class ListPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListPage');
   }
+  next(item){
+    this.navCtrl.push("DetailPage",{item:item},{animate:true,animation:'transition',duration:700,direction:'forward'})
+
+  }
 
 }

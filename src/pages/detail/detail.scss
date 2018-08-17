@@ -1,0 +1,45 @@
+page-detail {
+    .toolbar-background-md {
+        border-color: none;
+        background: transparent;
+    }
+    .judul{
+        color:white;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 8px;
+        overflow: hidden;
+    }   
+    .header-icon{
+        width: 75px;
+        height: 55px;
+        margin-left: 0px;
+    }
+    .flex{
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .line{
+        width: 100%;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        display: flex;
+    }
+    .kotak{
+        flex: 1;
+        height:8px;
+    }
+    .subtitle{
+        color:white;
+        font-size: 16px;
+        margin: 0px;
+        // padding: 0px;
+        margin-left: 16px;
+        margin-top:8px;
+        margin-bottom:8px;
+    }
+}
