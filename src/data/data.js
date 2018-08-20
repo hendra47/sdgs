@@ -1,103 +1,103 @@
 let list = [{
                 id:1,
-                title:'No Proverty',
-                subtitle:'End Poverty in all its forms everywhere',
+                title:'Tidak ada kemiskinan',
+                subtitle:'Akhiri Kemiskinan dalam segala bentuknya di mana-mana',
                 color:'#DE2D43'
             },
             {
                 id:2,
-                title:'Zero Hunger',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Tidak ada kelaparan',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#DEA73A'
             },
             {
                 id:3,
-                title:'Good Health and Well-being',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Kesehatan dan Kesejahteraan yang baik',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#4CA246'
             },
             {
                 id:4,
-                title:'Quality Education',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Kualitas pendidikan',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#C7202F'
             },
             {
                 id:5,
-                title:'Gender Equality',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Kesetaraan gender',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#F03F2E'
             },
             {
                 id:6,
-                title:'Clean Water and Sanitation',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Air Bersih dan Sanitasi',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#26C0E7'
             },
             {
                 id:7,
-                title:'Affordable and Clean Energy',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Energi Terjangkau dan Bersih',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#FBC412'
             },
             {
                 id:8,
-                title:'Decent Work and Economic Growth',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Pekerjaan Layak dan Pertumbuhan Ekonomi',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#A41740'
             },
             {
                 id:9,
-                title:'Industry, Innovation and Infrastructure',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Industri, Inovasi dan Infrastruktur',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#FE6718'
             },
             {
                 id:10,
-                title:'Reduced Inequality',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Mengurangi Ketimpangan',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#DF0E65'
             },
             {
                 id:11,
                 title:'Sustainable Cities and Communities',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#FE9D10'
             },
             {
                 id:12,
-                title:'Responsible Consumption and Production',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Konsumsi dan Produksi Bertanggung Jawab',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#BF8B21'
             },
             {
                 id:13,
-                title:'Climate Action',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Aksi Iklim',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#3B7E40'
             },
             {
                 id:14,
-                title:'Life Below Water',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Kehidupan Di Bawah Air',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#0595DB'
             },
             {
                 id:15,
-                title:'Life on Land',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Kehidupan di Darat',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#50C21B'
             },
             {
                 id:16,
-                title:'Peace and Justice Strong Institutions',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Perdamaian dan Keadilan Lembaga-Lembaga yang Kuat',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#00669E'
             },
             {
                 id:17,
-                title:'Partnerships to achieve the Goal',
-                subtitle:'End hunger,Achieve food security and improved nutrition and promote sustainable agriculture',
+                title:'Kemitraan untuk mencapai Tujuan',
+                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
                 color:'#17476B'
             }]
 
