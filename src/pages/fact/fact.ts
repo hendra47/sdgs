@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,NgZone } from '@angular/core';
 import { IonicPage, NavController, NavParams,Events } from 'ionic-angular';
 import fact from "../../data/fact";
 import { ReducerProvider } from '../../providers/reducer/reducer';
@@ -17,22 +17,24 @@ import { ReducerProvider } from '../../providers/reducer/reducer';
 export class FactPage {
   list:any=[];
   data:any=[];
-  constructor(public events: Events,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private _zone: NgZone,public events: Events,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
     let ID = this.service.getId();
     
     this.data = fact.filter(function (el) {
       return el.id == ID;
     });
-    if(this.data.length > 0){
-      this.list= this.data[0].list;
-    }
+    // if(this.data.length > 0){
+    //   this.list= this.data[0].list;
+    // }
 
-    events.subscribe('kirim:data', (item) => {
-      console.log("item",item);
+    events.subscribe('kirim:indicator', (item) => {
+      
       if(item.id){
-        this.list = this.data[0].list.filter(function (el) {
-          return el.parent == item.id;
-        });
+        this._zone.run(() =>{
+            this.list = this.data[0].list.filter(function (el) {
+              return el.parent == item.id;
+            });
+        })
       }
     });
   }

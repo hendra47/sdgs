@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,NgZone } from '@angular/core';
 import { IonicPage, NavController, NavParams,Events } from 'ionic-angular';
 import indicator from "../../data/indicator";
 import { ReducerProvider } from '../../providers/reducer/reducer';
@@ -19,22 +19,25 @@ export class IndicatorPage {
   list:any=[];
   data:any=[];
   _param:any;
-  constructor(public events: Events,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private _zone: NgZone,public events: Events,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
     let ID = this.service.getId();
     
     this.data = indicator.filter(function (el) {
       return el.id == ID;
     });
-    if(this.data.length > 0){
-      this.list= this.data[0].list;
-    }
+    // if(this.data.length > 0){
+    //   this.list= this.data[0].list;
+    // }
 
-    events.subscribe('kirim:data', (item) => {
-      console.log("item",item);
+    events.subscribe('kirim:data', (item) => {      
       if(item.id){
-        this.list = this.data[0].list.filter(function (el) {
-          return el.parent == item.id;
-        });
+        this._zone.run(() =>{
+          console.log("list1",this.list);
+            this.list = this.data[0].list.filter(function (el) {
+              return el.parent == item.id;
+            });
+          console.log("list2",this.list);
+        })
       }
     });
   }
