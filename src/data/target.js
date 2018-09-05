@@ -3,32 +3,33 @@ let target = [
                 id:1,
                 list:[{
                        id: 1,
-                        desc: "1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day"
+                        desc: "1.1 Pada tahun 2030,Mengentaskan kemiskinan ekstrim bagi semua orang yang saat ini berpendapatan kurang dari 1,25 dolar Amerika per hari."
                       },
-                      {
-                        id: 2,
-                        desc: "1.2: By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions"
-                      },
-                      {
-                        id: 3,
-                        desc: "1.3: Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable"
-                      },
-                      {
-                        id: 4,
-                        desc: "1.4: By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance"
-                      },
-                      {
-                        id: 5,
-                        desc: "1.5: By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters"
-                      },
-                      {
-                        id: 6,
-                        desc: "1.a: Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions"
-                      },
-                      {
-                        id: 7,
-                        desc: "1.b: Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions"
-                      }]
+                      {
+                        id: 2,
+                        desc: "1.2 Pada tahun 2030, mengurangi setidaknya setengah proporsi laki-laki, perempuan dan anak-anak dari semua usia, yang hidup dalam kemiskinan di semua dimensi, sesuai dengan definisi nasional."
+                      },
+                      {
+                        id: 3,
+                        desc: "1.3 Menerapkan secara nasional sistem dan upaya perlindungan sosial yang tepat bagi semua, termasuk kelompok yang paling miskin, dan pada tahun 2030 mencapai cakupan substansial bagi kelompok miskin dan rentan."
+                      },                        
+                      {
+                         id: 4,
+                         desc: "1.4 Pada tahun 2030, menjamin bahwa semua laki-laki dan perempuan, khususnya masyarakat miskin dan rentan, memiliki hak yang sama terhadap sumber daya ekonomi, serta akses terhadap pelayanan dasar, kepemilikan dan kontrol atas tanah dan bentuk kepemilikan lain, warisan, sumber daya alam, teknologi baru, dan jasa keuangan yang tepat, termasuk keuangan mikro."
+                       },
+                      {
+                         id: 5,
+                         desc: "1.5 Pada tahun 2030, membangun ketahanan masyarakat miskin dan mereka yang berada dalam kondisi rentan, dan mengurangi kerentanan mereka terhadap kejadian ekstrim terkait iklim dan guncangan ekonomi, sosial, lingkungan, dan bencana"
+                      },
+                      {
+                         id: 6,
+                         desc: "1.a Menjamin mobilisasi yang signifikan terkait sumber daya dari berbagai sumber, termasuk melalui kerjasama pembangunan  yang lebih baik, untuk menyediakan sarana yang memadai dan terjangkau bagi negara berkembang, khususnya negara kurang berkembang untuk melaksanakan program dan kebijakan mengakhiri kemiskinan di semua dimensi."
+                      },                        
+                      {
+                         id: 7,
+                         desc: "1.b Membuat kerangka kebijakan yang kuat di tingkat nasional, regional dan internasional, berdasarkan strategi pembangunan  yang  memihak pada kelompok miskin dan peka terhadap  isu gender untuk mendukung investasi  yang cepat dalam tindakan pemberantasan kemiskinan."
+                       }
+                      ]
               },{
                 id:2,
                 list:[{

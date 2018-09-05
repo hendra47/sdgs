@@ -1,7 +1,7 @@
 
 
 <ion-content>
-    <p class="desc" *ngFor="let item of list">
-        {{item.desc}}
-    </p>
+    <div class="desc" *ngFor="let item of list">
+       <p (click)="_next(item)">{{item.desc}}</p>
+    </div>
 </ion-content>

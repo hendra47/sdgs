@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,Events } from 'ionic-angular';
 import target from "../../data/target";
 import { ReducerProvider } from '../../providers/reducer/reducer';
 
@@ -17,7 +17,7 @@ import { ReducerProvider } from '../../providers/reducer/reducer';
 })
 export class TargetPage {
   list:any=[];
-  constructor(public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public events: Events,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
    
     let ID = this.service.getId();
     this.list = target.filter(function (el) {
@@ -31,6 +31,11 @@ export class TargetPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TargetPage');
+  }
+
+  _next(item){
+    this.events.publish('kirim:data', item);
+    this.navCtrl.parent.select(1);
   }
 
 }

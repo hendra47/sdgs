@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,Events } from 'ionic-angular';
 import indicator from "../../data/indicator";
 import { ReducerProvider } from '../../providers/reducer/reducer';
 
@@ -17,20 +17,35 @@ import { ReducerProvider } from '../../providers/reducer/reducer';
 })
 export class IndicatorPage {
   list:any=[];
-  constructor(public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  data:any=[];
+  _param:any;
+  constructor(public events: Events,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
     let ID = this.service.getId();
-    this.list = indicator.filter(function (el) {
+    
+    this.data = indicator.filter(function (el) {
       return el.id == ID;
     });
-    if(this.list.length > 0){
-      this.list= this.list[0].list;
+    if(this.data.length > 0){
+      this.list= this.data[0].list;
     }
-    
-   
+
+    events.subscribe('kirim:data', (item) => {
+      console.log("item",item);
+      if(item.id){
+        this.list = this.data[0].list.filter(function (el) {
+          return el.parent == item.id;
+        });
+      }
+    });
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IndicatorPage');
+  }
+  _next(item){
+    this.events.publish('kirim:indicator', item);
+    this.navCtrl.parent.select(2);
   }
 
 }

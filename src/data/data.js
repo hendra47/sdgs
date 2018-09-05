@@ -1,104 +1,86 @@
 let list = [{
                 id:1,
-                title:'Tidak ada kemiskinan',
-                subtitle:'Akhiri Kemiskinan dalam segala bentuknya di mana-mana',
+                title:'TANPA KEMISKINAN',
+                subtitle:'Mengakhiri Kemiskinan dalam Segala Bentuk Dimanapun',
                 color:'#DE2D43'
             },
             {
                 id:2,
-                title:'Tidak ada kelaparan',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'TANPA KELAPARAN',
+                subtitle:'Menghilangkan Kelaparan, Mencapai Ketahanan Pangan dan Gizi yang Baik, serta Meningkatkan Pertanian Berkelanjutan',
                 color:'#DEA73A'
             },
             {
                 id:3,
-                title:'Kesehatan dan Kesejahteraan yang baik',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'KEHIDUPAN SEHAT DAN SEJAHTERA',
+                subtitle:'Menjamin Kehidupan yang Sehat dan Meningkatkan Kesejahteraan Seluruh Penduduk Semua Usia',
                 color:'#4CA246'
             },
             {
                 id:4,
-                title:'Kualitas pendidikan',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'PENDIDIKAN BERKUALITAS',
+                subtitle:'Menjamin Kualitas Pendidikan yang Inklusif dan Merata serta Meningkatkan Kesempatan Belajar Sepanjang Hayat untuk Semua',
                 color:'#C7202F'
             },
             {
                 id:5,
-                title:'Kesetaraan gender',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'KESETARAAN GENDER',
+                subtitle:'Mencapai Kesetaraan Gender dan Memberdayakan Perempuan',
                 color:'#F03F2E'
             },
             {
                 id:6,
-                title:'Air Bersih dan Sanitasi',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'AIR BERSIH DAN SANITASI LAYAK',
+                subtitle:'Menjamin Ketersediaan serta Pengelolaan Air Bersih dan Sanitasi yang Berkelanjutan untuk Semu',
                 color:'#26C0E7'
             },
             {
                 id:7,
-                title:'Energi Terjangkau dan Bersih',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'ENERGI BERSIH DAN TERJANGKAU',
+                subtitle:'Menjamin Akses Energi yang Terjangkau, Andal, Berkelanjutan dan Modern untuk Semua',
                 color:'#FBC412'
             },
             {
                 id:8,
-                title:'Pekerjaan Layak dan Pertumbuhan Ekonomi',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'PEKERJAAN LAYAK DAN PERTUMBUHAN EKONOMI',
+                subtitle:'Meningkatkan Pertumbuhan Ekonomi yang Inklusif dan Berkelanjutan, Kesempatan Kerja yang Produktif dan Menyeluruh, serta Pekerjaan yang Layak untuk Semua',
                 color:'#A41740'
             },
             {
                 id:9,
-                title:'Industri, Inovasi dan Infrastruktur',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'INDUSTRI, INOVASI DAN INFRASTRUKTUR',
+                subtitle:'Membangun Infrastruktur yang Tangguh, Meningkatkan Industri Inklusif dan Berkelanjutan, serta Mendorong Inovasi',
                 color:'#FE6718'
             },
             {
                 id:10,
-                title:'Mengurangi Ketimpangan',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'BERKURANGNYA KESENJANGAN',
+                subtitle:'Mengurangi Kesenjangan Intra- dan Antarnegara',
                 color:'#DF0E65'
             },
             {
                 id:11,
-                title:'Sustainable Cities and Communities',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'KOTA DAN PEMUKIMAN YANG BERKELANJUTAN',
+                subtitle:'Menjadikan Kota dan Pemukiman Inklusif, Aman, Tannguh dan Berkelanjutan',
                 color:'#FE9D10'
             },
             {
                 id:12,
-                title:'Konsumsi dan Produksi Bertanggung Jawab',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'KONSUMSI DAN PRODUKSI YANG BERTANGGUNG JAWAB',
+                subtitle:'Menjamin Pola Produksi dan Konsumsi yang Berkelanjutan',
                 color:'#BF8B21'
             },
             {
                 id:13,
-                title:'Aksi Iklim',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'PENANGANAN PERUBAHAN IKLIM',
+                subtitle:'Mengambil Tindakan Cepat untuk Mengatasi Perubahan Iklim dan Dampaknya',
                 color:'#3B7E40'
             },
             {
                 id:14,
-                title:'Kehidupan Di Bawah Air',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
+                title:'EKOSISTEM LAUTAN',
+                subtitle:'Melestarikan dan Memanfaatkan secara Berkelanjutan Sumber Daya Kelautan dan Samudera untuk Pembangunan Berkelanjutan',
                 color:'#0595DB'
-            },
-            {
-                id:15,
-                title:'Kehidupan di Darat',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
-                color:'#50C21B'
-            },
-            {
-                id:16,
-                title:'Perdamaian dan Keadilan Lembaga-Lembaga yang Kuat',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
-                color:'#00669E'
-            },
-            {
-                id:17,
-                title:'Kemitraan untuk mencapai Tujuan',
-                subtitle:'Akhiri kelaparan, Capai keamanan pangan dan tingkatkan gizi serta tingkatkan pertanian berkelanjutan',
-                color:'#17476B'
             }]
 
 export default list;

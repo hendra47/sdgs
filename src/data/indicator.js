@@ -2,59 +2,173 @@ let indicator = [{
     id:1,
     list:[{
             id:1,
-            desc:"1.1.1: Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)"
+            parent:1,
+            desc:"1.1.1    Tingkat kemiskinan ekstrim."
           },
           {
             id:2,
-            desc:"1.2.1: Proportion of population living below the national poverty line, by sex and age"
+            parent:2,
+            desc:"1.2.1*   Persentase penduduk yang hidup di bawah garis kemiskinan nasional, menurut jenis kelamin dan kelompok umur."
           },
           {
             id:3,
-            desc:"1.2.2: Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions"
+            parent:2,
+            desc:"1.2.2    Persentase laki-laki, perempuan dan anak-anak dari semua usia, yang hidup dalam kemiskinan dalam berbagai dimensi, sesuai dengan definisi nasional."
           },
           {
             id:4,
-            desc:"1.3.1: Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable"
+            parent:3,
+            desc:"1.3.1    Proporsi penduduk yang menerima program perlindungan sosial, menurut jenis kelamin, untuk kategori kelompok anak berkebutuhan khusus, pengangguran, lansia, penyandang difabilitas, ibu hamil/ melahirkan, korban kecelakaan kerja, kelompok miskin dan rentan."
           },
           {
             id:5,
-            desc:"1.4.1: Proportion of population living in households with access to basic services"
+            parent:3,
+            desc:"1.3.1.(a) Proporsi peserta jaminan kesehatan melalui SJSN Bidang Kesehatan."
           },
           {
             id:6,
-            desc:"1.4.2: Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure"
+            parent:3,
+            desc:"1.3.1.(b) Proporsi peserta Program Jaminan Sosial Bidang Ketenagakerjaan."
           },
           {
             id:7,
-            desc:"1.5.1: Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population"
+            parent:3,
+            desc:"1.3.1.(c) Persentase penyandang disabilitas yang miskin dan rentan yang terpenuhi hak dasarnya dan inklusivitas."
           },
           {
             id:8,
-            desc:"1.5.2: Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)"
+            parent:3,
+            desc:"1.3.1.(d) Jumlah rumah tangga yang mendapatkan bantuan tunai bersyarat/Program Keluarga Harapan."
           },
           {
             id:9,
-            desc:"1.5.3: Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030"
+            parent:4,
+            desc:"1.4.1    Proporsi penduduk/rumah tangga dengan akses terhadap pelayanan dasar."
           },
           {
             id:10,
-            desc:"1.5.4: Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+            parent:4,
+            desc:"1.4.1.(a) Persentase perempuan pernah kawin umur 15-49 tahun yang proses melahirkan terakhirnya di fasilitas kesehatan."
           },
           {
             id:11,
-            desc:"1.a.1: Proportion of domestically generated resources allocated by the government directly to poverty reduction programmes"
+            parent:4,
+            desc:"1.4.1.(b) Persentase anak umur 12-23 bulan yang menerima imunisasi dasar lengkap."
           },
           {
             id:12,
-            desc:"1.a.2: Proportion of total government spending on essential services (education, health and social protection)"
+            parent:4,
+            desc:"1.4.1.(c) Prevalensi penggunaan metode kontrasepsi (CPR) semua cara pada Pasangan Usia Subur (PUS) usia 15-49 tahun yang berstatus kawin."
           },
           {
             id:13,
-            desc:"1.a.3: Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP"
+            parent:4,
+            desc:"1.4.1.(d) Persentase rumah tangga yang memiliki akses terhadap layanan sumber air minum layak dan berkelanjutan."
           },
           {
             id:14,
-            desc:"1.b.1: Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups"
+            parent:4,
+            desc:"1.4.1.(e) Persentase rumah tangga yang memiliki akses terhadap layanan sanitasi layak dan berkelanjutan."
+          },
+          {
+            id:15,
+            parent:4,
+            desc:"1.4.1.(f) Persentase rumah tangga kumuh perkotaan."
+          },
+          {
+            id:16,
+            parent:4,
+            desc:"1.4.1.(g) Angka Partisipasi Murni (APM) SD/MI/sederajat."
+          },
+          {
+            id:17,
+            parent:4,
+            desc:"1.4.1.(h) Angka Partisipasi Murni (APM) SD/MI/sederajat."
+          },
+          {
+            id:19,
+            parent:4,
+            desc:"1.4.1.(i) Angka Partisipasi Murni (APM) SD/MI/sederajat. "
+          },
+          {
+            id:20,
+            parent:4,
+            desc:""
+          },
+          {
+            id:21,
+            parent:4,
+            desc:"1.4.1.(j) Angka Partisipasi Murni (APM) SD/MI/sederajat."
+          },
+          {
+            id:22,
+            parent:4,
+            desc:"1.4.1.(k) Persentase penduduk umur 0-17 tahun dengan kepemilikan akta kelahiran."
+          },
+          {
+            id:23,
+            parent:4,
+            desc:"1.4.2    Proporsi dari penduduk dewasa yang mendapatkan hak atas tanah yang didasari oleh dokumen hukum dan yang memiliki hak atas tanah berdasarkan jenis kelamin dan tipe kepemilikan"
+          },
+          {
+            id:24,
+            parent:5,
+            desc:"1.5.1*   Jumlah korban meninggal, hilang, dan terkena dampak bencana per 100.000 orang."
+          },
+          {
+            id:25,
+            parent:5,
+            desc:"1.5.1.(a) Jumlah lokasi penguatan pengurangan risiko bencana daerah."
+          },
+          {
+            id:26,
+            parent:5,
+            desc:"1.5.1.(b) Jumlah lokasi penguatan pengurangan risiko bencana daerah."
+          },
+          {
+            id:28,
+            parent:5,
+            desc:"1.5.1.(c) Pendampingan psikososial korban bencana sosial."
+          },
+          {
+            id:29,
+            parent:5,
+            desc:"1.5.1.(d) Jumlah daerah bencana alam/ bencana sosial yang mendapat pendidikan layanan khusus."
+          },
+          {
+            id:30,
+            parent:5,
+            desc:"1.5.1.(e) Indeks risiko bencana pada pusat pusat pertumbuhan yang berisiko tinggi."
+          },
+          {
+            id:31,
+            parent:5,
+            desc:"1.5.2    Jumlah kerugian ekonomi langsung akibat bencana terhadap GDP global."
+          },
+          {
+            id:32,
+            parent:5,
+            desc:"1.5.2.(a) Jumlah kerugian ekonomi langsung akibat bencana"
+          },
+          {
+            id:34,
+            parent:5,
+            desc:"1.5.3*   Dokumen strategi pengurangan risiko bencana (PRB) tingkat nasional dan daerah."
+          },
+          {
+            id:35,
+            parent:6,
+            desc:"1.a.1* Indikator nasional yang sesuai dengan indikator global (tidak ada di dalam lampiran perpres)."
+          },
+          {
+            id:36,
+            parent:6,
+            desc:"1.a.2* Indikator nasional yang sesuai dengan indikator global (tidak ada di dalam lampiran perpres)."
+          },
+          {
+            id:37,
+            parent:7,
+            desc:"1.b.1  Proporsi pengeluaran rutin dan pembangunan pada sektor-sektor yang memberi manfaat pada kelompok perempuan, kelompok miskin dan rentan."
           }
         ]
   },
