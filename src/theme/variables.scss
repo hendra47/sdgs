@@ -77,19 +77,20 @@ $colors: (
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
+@font-face {
+  font-family: 'Myriad';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../assets/fonts/Myriad_Regular.ttf');
+  src: url('../assets/fonts/Myriad_Regular.ttf?#iefix') format('embedded-opentype'),
+  local('Myriad Regular'),
+  local('Myriad Bold'),
+  url('../assets/fonts/Myriad_Regular.ttf') format('truetype'),
+  }
 
-@import "ionic.ionicons";
-
-
-// Fonts
-// --------------------------------------------------
-
-@import "roboto";
-@import "noto-sans";
-
-.back-button-icon-md {
-  color: white;
-}
+// .back-button-icon-md {
+//   color: white !important;
+// }
 
 // .toolbar-background-ios {
 //   background: transparent !important;

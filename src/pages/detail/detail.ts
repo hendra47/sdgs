@@ -19,13 +19,11 @@ export class DetailPage {
   detail:any;
   icon:any;
   arrColor:any=[];
-  tab1Root = "TargetPage";
-  tab2Root = "IndicatorPage";
-  tab3Root = "FactPage";
+  pilihan:any="target";
   constructor( private platform: Platform,private statusBar: StatusBar,private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
     this._zone.run(() =>{
       this.detail=this.navParams.get("item");
-      this.icon="assets/imgs/logos"+this.detail.id+".png"; 
+      this.icon="assets/imgs/sdgc"+this.detail.id+".png"; 
       this.arrColor=list;       
     });
     let color = this.navParams.get("item").color;
@@ -33,9 +31,15 @@ export class DetailPage {
           this.statusBar.backgroundColorByHexString(color);
     });
   }
+  ionViewWillLeave(){
+    this.statusBar.backgroundColorByHexString("#00ADEE");
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailPage');
+  }
+  goBack() {
+    this.navCtrl.pop();
   }
 
 }

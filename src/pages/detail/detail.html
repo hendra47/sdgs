@@ -1,26 +1,33 @@
 
-<ion-header [ngStyle]="{'background': detail?.color}">
-  <ion-navbar [ngStyle]="{'background': detail?.color}">
-    <div class="flex">
-        <img [src]="icon" class="header-icon">
-        <p class="judul">{{ detail?.title }}</p>
-    </div>
-  </ion-navbar>
-  <div class="line">
-      <div *ngFor="let color of arrColor" class="kotak" [ngStyle]="{'background-color': color?.color}">
-        &nbsp;
-      </div>
-  </div>
+<ion-header [ngStyle]="{'background-color': detail?.color}" >
+  <ion-navbar [ngStyle]="{'background-color': detail?.color}" hideBackButton="true">
+      <div class="flex">
+            <img src="assets/icon/back.png" class="header-back" (click)="goBack()">
+            <img [src]="icon" class="header-icon">
+            <p class="judul">{{ detail?.title }}</p>
+        </div> 
+          <div class="line">
+              <div *ngFor="let color of arrColor" class="kotak" [ngStyle]="{'background-color': color?.color}">
+                &nbsp;
+              </div>
+          </div>
   <div class="sub" [ngStyle]="{'background': detail?.color}">
     <p class="subtitle">{{detail?.subtitle}}</p>
   </div>
+  </ion-navbar>
 </ion-header>
 
 
 <ion-content>
-  <ion-tabs #myTabs>
-    <ion-tab [root]="tab1Root" [rootParams]="navParams.get('data')" tabTitle="Target">TARGETS</ion-tab>
-    <ion-tab [root]="tab2Root" [rootParams]="navParams.get('data')" tabTitle="Indicator">INDICATORS</ion-tab>
-    <ion-tab [root]="tab3Root" [rootParams]="navParams.get('data')" tabTitle="Fact & Figures">FACTS & FIGURES</ion-tab>
-  </ion-tabs>
+    <ion-segment [(ngModel)]="pilihan" color="primary">
+        <ion-segment-button value="target">
+          Target
+        </ion-segment-button>
+        <ion-segment-button value="indikator">
+          Indikator
+        </ion-segment-button>
+        <ion-segment-button value="metadata">
+            Metadata
+        </ion-segment-button>
+      </ion-segment>
 </ion-content>

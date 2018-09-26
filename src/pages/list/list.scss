@@ -1,7 +1,6 @@
 page-list {
     .header-icon{
-        width: 45px;
-        height: 40px;
+        width: 100%;
         margin:0px;
         padding: 0px;
     }
@@ -10,6 +9,12 @@ page-list {
         height: 100%;
         justify-content: flex-start;
         margin-left: 16px;
+        align-items: center;
+    }
+    .center{
+        display: flex;
+        height: 100%;
+        justify-content: center;
         align-items: center;
     }
     .item{
@@ -34,6 +39,20 @@ page-list {
         overflow: hidden;
     }  
     .toolbar-background {
-        background-color: blue;
+        background-color:#00ADEE;
       }
+    .card-content-md {
+        padding: 0 !important;
+        max-height: 145px;
+        min-height: 145px;
+        min-width: 145px;
+        max-width: 145px;
+     }
+    .card-content-ios {
+        padding: 0 !important;
+        max-height: 145px;
+        min-height: 145px;
+        min-width: 145px;
+        max-width: 145px;
+     }
 }
