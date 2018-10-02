@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 import list from "../../data/data";
 import { ReducerProvider } from '../../providers/reducer/reducer';
 @IonicPage()
@@ -10,7 +10,7 @@ import { ReducerProvider } from '../../providers/reducer/reducer';
 })
 export class ListPage {
   arrList:any=[];
-  constructor(public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private iab: InAppBrowser,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
     this.arrList=list;
   }
 
@@ -18,9 +18,12 @@ export class ListPage {
     console.log('ionViewDidLoad ListPage');
   }
   next(item){
-    this.service.setID(item.id);
-    this.navCtrl.push("DetailPage",{item:item},{animate:true,animation:'transition',duration:700,direction:'forward'})
-
+    if(item.id==18){
+      this.iab.create('http://sdgs.bappenas.go.id/');
+    }else{
+      this.service.setID(item.id);
+      this.navCtrl.push("DetailPage",{item:item},{animate:true,animation:'transition',duration:700,direction:'forward'})
+    }
   }
 
 }

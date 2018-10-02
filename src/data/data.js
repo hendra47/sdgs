@@ -117,6 +117,13 @@ let list = [{
                 subtitle:'Melestarikan dan Memanfaatkan secara Berkelanjutan Sumber Daya Kelautan dan Samudera untuk Pembangunan Berkelanjutan',
                 color:'#19486A',
                 sdgc_icon:'assets/imgs/sdgc17.png'
+            },
+            {
+                id:18,
+                title:'KEMITRAAN UNTUK MENCAPAI TUJUAN',
+                subtitle:'Melestarikan dan Memanfaatkan secara Berkelanjutan Sumber Daya Kelautan dan Samudera untuk Pembangunan Berkelanjutan',
+                color:'#19486A',
+                sdgc_icon:'assets/imgs/link.png'
             }]
 
 export default list;
