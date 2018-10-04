@@ -1,8 +1,12 @@
 page-list {
     .header-icon{
-        width: 100%;
+        width: 85%;
         margin:0px;
         padding: 0px;
+    }
+    .search-icon{
+        height: 38px;
+        padding-right: 12px;
     }
     .flex{
         display: flex;
@@ -13,8 +17,9 @@ page-list {
     }
     .center{
         display: flex;
+        flex-direction: row;
         height: 100%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .item{
@@ -39,7 +44,7 @@ page-list {
         overflow: hidden;
     }  
     .toolbar-background {
-        background-color:#00ADEE;
+        background-color:#FFF;
       }
     .card-content-md {
         padding: 0 !important;

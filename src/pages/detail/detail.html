@@ -5,6 +5,8 @@
             <img src="assets/icon/back.png" class="header-back" (click)="goBack()">
             <img [src]="icon" class="header-icon">
             <p class="judul">{{ detail?.title }}</p>
+        <img src="assets/icon/search.png" (click)="cari()" class="search-icon">
+
         </div> 
           <div class="line">
               <div *ngFor="let color of arrColor" class="kotak" [ngStyle]="{'background-color': color?.color}">

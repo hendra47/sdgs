@@ -1,5 +1,5 @@
 import { Component,NgZone } from '@angular/core';
-import { IonicPage, NavController, NavParams,Platform } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,Platform,ModalController } from 'ionic-angular';
 import list from "../../data/data";
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -20,7 +20,7 @@ export class DetailPage {
   icon:any;
   arrColor:any=[];
   pilihan:any="target";
-  constructor( private platform: Platform,private statusBar: StatusBar,private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
+  constructor( public modalCtrl: ModalController,private platform: Platform,private statusBar: StatusBar,private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
     this._zone.run(() =>{
       this.detail=this.navParams.get("item");
       this.icon="assets/imgs/sdgc"+this.detail.id+".png"; 
@@ -40,6 +40,11 @@ export class DetailPage {
   }
   goBack() {
     this.navCtrl.pop();
+  }
+
+  cari() {
+    let profileModal = this.modalCtrl.create("SearchPage", { userId: 8675309 });
+    profileModal.present();
   }
 
 }
