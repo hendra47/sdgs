@@ -72,7 +72,7 @@ let list = [{
             {
                 id:11,
                 title:'KOTA DAN PEMUKIMAN YANG BERKELANJUTAN',
-                subtitle:'Menjadikan Kota dan Pemukiman Inklusif, Aman, Tannguh dan Berkelanjutan',
+                subtitle:'Menjadikan Kota dan Permukiman Inklusif, Aman, Tangguh dan Berkelanjutan',
                 color:'#FD9D24',
                 sdgc_icon:'assets/imgs/sdgs11.jpg'
             },
