@@ -37,7 +37,7 @@ let list = [{
             {
                 id:6,
                 title:'AIR BERSIH DAN SANITASI LAYAK',
-                subtitle:'Menjamin Ketersediaan serta Pengelolaan Air Bersih dan Sanitasi yang Berkelanjutan untuk Semu',
+                subtitle:'Menjamin Ketersediaan serta Pengelolaan Air Bersih dan Sanitasi yang Berkelanjutan untuk Semua',
                 color:'#26BDE2',
                 sdgc_icon:'assets/imgs/sdgs6.jpg'
             },
@@ -107,7 +107,7 @@ let list = [{
             {
                 id:16,
                 title:'PERDAMAIAN KEADILAN  DAN KELEMBAGAAN YANG TANGGUH',
-                subtitle:'Perdamaian, stabilitas, hak-hak asasi manusia dan pemerintahan efektif berdasarkan aturan hukum adalah jalur pentimg menuju pembangunan berkelanjutan',
+                subtitle:'Menguatkan Masyarakat yang Inklusif dan Damai untuk Pembangunan Berkelanjutan, Menyediakan Akses Keadilan untuk Semua, dan Membangunan Kelembagaan yang Efektif, Akuntabel, dan Inklusif di Semua Tingkatan',
                 color:'#00689D',
                 sdgc_icon:'assets/imgs/sdgs16.jpg'
             },
