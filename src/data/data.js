@@ -71,7 +71,7 @@ let list = [{
             },
             {
                 id:11,
-                title:'KOTA DAN PEMUKIMAN YANG BERKELANJUTAN',
+                title:'KOTA DAN PERMUKIMAN YANG BERKELANJUTAN',
                 subtitle:'Menjadikan Kota dan Permukiman Inklusif, Aman, Tangguh dan Berkelanjutan',
                 color:'#FD9D24',
                 sdgc_icon:'assets/imgs/sdgs11.jpg'
@@ -107,7 +107,7 @@ let list = [{
             {
                 id:16,
                 title:'PERDAMAIAN KEADILAN  DAN KELEMBAGAAN YANG TANGGUH',
-                subtitle:'Menguatkan Masyarakat yang Inklusif dan Damai untuk Pembangunan Berkelanjutan, Menyediakan Akses Keadilan untuk Semua, dan Membangunan Kelembagaan yang Efektif, Akuntabel, dan Inklusif di Semua Tingkatan',
+                subtitle:'Menguatkan Masyarakat yang Inklusif dan Damai untuk Pembangunan Berkelanjutan, Menyediakan Akses Keadilan untuk Semua, dan Membangun Kelembagaan yang Efektif, Akuntabel, dan Inklusif di Semua Tingkatan',
                 color:'#00689D',
                 sdgc_icon:'assets/imgs/sdgs16.jpg'
             },
