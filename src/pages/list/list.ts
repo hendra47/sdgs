@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams,LoadingController } from 'ionic-ang
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import list from "../../data/data";
 import { ReducerProvider } from '../../providers/reducer/reducer';
+import { Store } from '@ngrx/store';
+
 @IonicPage()
 @Component({
   selector: 'page-list',
@@ -10,7 +12,9 @@ import { ReducerProvider } from '../../providers/reducer/reducer';
 })
 export class ListPage {
   arrList:any=[];
-  constructor(public loadingCtrl: LoadingController,private iab: InAppBrowser,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  subscription:any;
+  loading:any;
+  constructor(private store: Store<any>,public loadingCtrl: LoadingController,private iab: InAppBrowser,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
     this.arrList=list;
   }
 
@@ -27,16 +31,35 @@ export class ListPage {
   }
 
   presentLoadingDefault() {
-    let loading = this.loadingCtrl.create({
+    this._spinner();
+    this.store.dispatch({ type: "REQUEST_DATA1", payload:{loading:true}}); 
+    this.store.dispatch({ type: "REQUEST_DATA2", payload:{loading:true}}); 
+    this.store.dispatch({ type: "REQUEST_DATA3", payload:{loading:true}}); 
+  }
+  _spinner(){
+    this.loading = this.loadingCtrl.create({
       content: 'Get data from server. please wait...',
       spinner:'bubbles'
     });
-  
-    loading.present();
-
-    setTimeout(() => {
-      loading.dismiss();
-    }, 5000);
+    this.loading.present();
+  }
+  _subscribeRedux(){
+    //asset subscribe
+    this.subscription = this.store.select("dataReducer").subscribe((result:any)=>{
+      console.log(result);
+      if(result.actionStatus=="REQUEST_SUCCESS1"){
+        if(this.loading){
+          this.loading.dismiss();
+        }
+      }else if(result.actionStatus=="REQUEST_ERROR1"){
+        if(this.loading){
+          this.loading.dismiss();
+        }
+      }
+    });
+  }
+  ionViewDidEnter(){
+    this._subscribeRedux();
   }
 
 }

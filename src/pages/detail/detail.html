@@ -19,7 +19,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <div *ngIf="pilihan=='target'" [innerHtml]="data1?.title" style="padding:8px"></div>
+  <div *ngIf="pilihan=='indikator'" [innerHtml]="data2?.title" style="padding:8px"></div>
+  <div *ngIf="pilihan=='metadata'" [innerHtml]="data3?.title" style="padding:8px"></div>
+</ion-content>
 
 <ion-footer>
     <ion-segment [(ngModel)]="pilihan" color="primary">
