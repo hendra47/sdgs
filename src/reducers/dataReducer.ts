@@ -12,7 +12,7 @@ export function  dataReducer(state: any = initialState, action){
             return {data:action.payload.data,actionStatus:action.type}
         }
         case "REQUEST_ERROR1": {
-            return {...initialState,actionStatus:action.type}
+            return {...state,actionStatus:action.type}
         }
         default: {
             return state;

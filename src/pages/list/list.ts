@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,LoadingController,ToastController } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import list from "../../data/data";
 import { ReducerProvider } from '../../providers/reducer/reducer';
@@ -14,7 +14,7 @@ export class ListPage {
   arrList:any=[];
   subscription:any;
   loading:any;
-  constructor(private store: Store<any>,public loadingCtrl: LoadingController,private iab: InAppBrowser,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private toastCtrl:ToastController,private store: Store<any>,public loadingCtrl: LoadingController,private iab: InAppBrowser,public service :ReducerProvider,public navCtrl: NavController, public navParams: NavParams) {
     this.arrList=list;
   }
 
@@ -49,10 +49,12 @@ export class ListPage {
       console.log(result);
       if(result.actionStatus=="REQUEST_SUCCESS1"){
         if(this.loading){
+          this._showToast("Successfully update data...");
           this.loading.dismiss();
         }
       }else if(result.actionStatus=="REQUEST_ERROR1"){
         if(this.loading){
+          this._showToast("Connection Failed,Please try again...");
           this.loading.dismiss();
         }
       }
@@ -60,6 +62,15 @@ export class ListPage {
   }
   ionViewDidEnter(){
     this._subscribeRedux();
+  }
+
+  _showToast(msg){
+    let toast = this.toastCtrl.create({
+      message:msg,
+      duration:4000,
+      position:'top'
+    });
+    toast.present();
   }
 
 }
