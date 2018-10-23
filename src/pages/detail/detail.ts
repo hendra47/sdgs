@@ -24,9 +24,13 @@ export class DetailPage {
   subscription3:any;
   arrColor:any=[];
   pilihan:any="target";
-  data1:any;
-  data2:any;
-  data3:any;
+  data1:any=[];
+  data1_backup:any=[];
+  data2:any=[];
+  data2_backup:any=[];
+  data3:any=[];
+  data3_backup:any=[];
+
   constructor(private store: Store<any>, public modalCtrl: ModalController,private platform: Platform,private statusBar: StatusBar,private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
     this._zone.run(() =>{
       this.detail=this.navParams.get("item");
@@ -58,33 +62,33 @@ export class DetailPage {
   _subscribeRedux(){
     //asset subscribe
     this.subscription = this.store.select("dataReducer").subscribe((result:any)=>{
-      // console.log(result.data);
+      this.data1=[];
       for (let index = 0; index < result.data.length; index++) {
         const res = result.data[index];
-        if(this.detail.id==res.id){
-          this.data1=res;
-          // console.log(this.data1);
+      // console.log(this.detail.id+" "+res.id_list1);
+        if(this.detail.id==res.id_list1){
+          this.data1.push(res);
+          this.data1_backup.push(res);
+          console.log(res);
         }
       }
     });
     this.subscription2 = this.store.select("dataReducer2").subscribe((result:any)=>{
       // console.log(result.data);
+      this.data2=[];
       for (let index = 0; index < result.data.length; index++) {
         const res = result.data[index];
-        if(this.detail.id==res.id){
-          this.data2=res;
-          // console.log(this.data1);
-        }
+          this.data2.push(res);
+          this.data2_backup.push(res);
       }
     });
     this.subscription3 = this.store.select("dataReducer3").subscribe((result:any)=>{
       // console.log(result.data);
+      this.data3=[];
       for (let index = 0; index < result.data.length; index++) {
         const res = result.data[index];
-        if(this.detail.id==res.id){
-          this.data3=res;
-          // console.log(this.data1);
-        }
+        this.data3.push(res);
+        this.data3_backup.push(res);
       }
     });
   }
@@ -93,6 +97,14 @@ export class DetailPage {
   }
   ionViewDidEnter(){
     this._subscribeRedux();   
+  }
+  targetClick(item){
+    this.data2=this.data2_backup;
+    this.pilihan="indikator";
+    this.data2=this.data2.filter((res) => {
+        return res.id_child01.indexOf(item.id) > -1;
+    })
+    console.log(this.data2);
   }
 
 }
