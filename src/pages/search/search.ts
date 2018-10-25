@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,NgZone } from '@angular/core';
 import { IonicPage, NavController, NavParams,ViewController } from 'ionic-angular';
 
 /**
@@ -14,15 +14,28 @@ import { IonicPage, NavController, NavParams,ViewController } from 'ionic-angula
   templateUrl: 'search.html',
 })
 export class SearchPage {
-
-  constructor(public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
+  data=[];
+  data_backup=[];
+  myInput:any;
+  constructor(private _zone: NgZone,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
+    this._zone.run(() =>{
+    this.data=this.navParams.get("data");
+    this.data_backup=this.navParams.get("data");
+    console.log(this.data);
+    });
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage');
   }
   onInput(){
-
+    if(this.myInput){
+        this.data=this.data.filter((item) => {
+          return item.title.toLowerCase().indexOf(this.myInput.toLowerCase()) > -1;
+      });
+    }else{
+      this.data=this.data_backup;
+    }
   }
   onCancel(){
 

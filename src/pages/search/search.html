@@ -20,5 +20,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
-
+  <div  *ngFor="let item of data" style="padding:8px">
+    <div [innerHtml]="item.title"></div>
+  </div>
 </ion-content>
