@@ -11,6 +11,9 @@ export function  dataReducer(state: any = initialState, action){
         case "REQUEST_SUCCESS1": {
             return {data:action.payload.data,actionStatus:action.type}
         }
+        case "SUCCESS": {
+            return {...state,actionStatus:action.type}
+        }
         case "REQUEST_ERROR1": {
             return {...state,actionStatus:action.type}
         }

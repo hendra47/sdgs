@@ -117,11 +117,11 @@ export class DetailPage {
 
   cari() {
     if(this.pilihan=="target"){
-      this.searchData=this.data1_backup;
+      this.searchData=this.data1;
     }else if(this.pilihan=="indikator"){
-      this.searchData=this.data2_backup;
+      this.searchData=this.data2;
     }else if(this.pilihan=="metadata"){
-      this.searchData=this.data3_backup;
+      this.searchData=this.data3;
     }
     let profileModal = this.modalCtrl.create("SearchPage", { data: this.searchData });
     profileModal.present();

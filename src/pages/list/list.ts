@@ -51,6 +51,7 @@ export class ListPage {
         if(this.loading){
           this._showToast("Successfully update data...");
           this.loading.dismiss();
+          this.store.dispatch({ type: "SUCCESS", payload:{loading:false}}); 
         }
       }else if(result.actionStatus=="REQUEST_ERROR1"){
         if(this.loading){
