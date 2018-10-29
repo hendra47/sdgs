@@ -63,6 +63,11 @@ export class ListPage {
   ionViewDidEnter(){
     this._subscribeRedux();
   }
+  ionViewDidLeave(){
+    if(this.subscription){
+      this.subscription.unsubscribe();
+    }
+  }
 
   _showToast(msg){
     let toast = this.toastCtrl.create({

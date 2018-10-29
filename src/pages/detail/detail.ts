@@ -54,10 +54,6 @@ export class DetailPage {
     this.navCtrl.pop();
   }
 
-  cari() {
-    let profileModal = this.modalCtrl.create("SearchPage", { data: this.searchData });
-    profileModal.present();
-  }
 
   _subscribeRedux(){
     //asset subscribe
@@ -117,6 +113,18 @@ export class DetailPage {
     })
     this.searchData=this.data3;
     console.log(this.data3);
+  }
+
+  cari() {
+    if(this.pilihan=="target"){
+      this.searchData=this.data1_backup;
+    }else if(this.pilihan=="indikator"){
+      this.searchData=this.data2_backup;
+    }else if(this.pilihan=="metadata"){
+      this.searchData=this.data3_backup;
+    }
+    let profileModal = this.modalCtrl.create("SearchPage", { data: this.searchData });
+    profileModal.present();
   }
 
 }
