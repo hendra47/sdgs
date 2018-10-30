@@ -99,7 +99,8 @@ export class DetailPage {
     this.data2=this.data2_backup;
     this.pilihan="indikator";
     this.data2=this.data2.filter((res) => {
-        return res.id_child01.indexOf(item.id) > -1;
+        // return res.id_child01.indexOf(item.id) > -1;
+        return res.id_child01==item.id;
     })
     this.searchData=this.data2;
     console.log(this.data2);
@@ -109,7 +110,8 @@ export class DetailPage {
     this.data3=this.data3_backup;
     this.pilihan="metadata";
     this.data3=this.data3.filter((res) => {
-        return res.id_child02.indexOf(item.id) > -1;
+        // return res.id_child02.indexOf(item.id) > -1;
+        return res.id_child02==item.id;
     })
     this.searchData=this.data3;
     console.log(this.data3);
