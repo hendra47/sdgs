@@ -17,8 +17,10 @@ export class SearchPage {
   data=[];
   data_backup=[];
   myInput:any;
+  cariBy:"";
   constructor(private _zone: NgZone,public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
     this._zone.run(() =>{
+    this.cariBy=this.navParams.get("cariBy");
     this.data=this.navParams.get("data");
     this.data_backup=this.navParams.get("data");
     console.log(this.data);

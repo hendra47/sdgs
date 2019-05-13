@@ -118,14 +118,18 @@ export class DetailPage {
   }
 
   cari() {
+    let cariBy="";
     if(this.pilihan=="target"){
       this.searchData=this.data1;
+      cariBy="Target";
     }else if(this.pilihan=="indikator"){
       this.searchData=this.data2;
+      cariBy="Indikator";
     }else if(this.pilihan=="metadata"){
+      cariBy="Metadata";
       this.searchData=this.data3;
     }
-    let profileModal = this.modalCtrl.create("SearchPage", { data: this.searchData });
+    let profileModal = this.modalCtrl.create("SearchPage", { data: this.searchData,cariBy:cariBy });
     profileModal.present();
   }
 

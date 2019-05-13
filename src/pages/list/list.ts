@@ -18,9 +18,6 @@ export class ListPage {
     this.arrList=list;
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ListPage');
-  }
   next(item){
     if(item.id==18){
       this.iab.create('http://sdgs.bappenas.go.id/');
@@ -46,7 +43,6 @@ export class ListPage {
   _subscribeRedux(){
     //asset subscribe
     this.subscription = this.store.select("dataReducer").subscribe((result:any)=>{
-      console.log(result);
       if(result.actionStatus=="REQUEST_SUCCESS1"){
         if(this.loading){
           this._showToast("Successfully update data...");
@@ -60,6 +56,19 @@ export class ListPage {
         }
       }
     });
+    // this.subscription.unsubscribe();
+  }
+  ionViewDidLoad(){
+    this.subscription = this.store.select("dataReducer").subscribe((result:any)=>{
+      console.log(result);
+      if(result.actionStatus=="REQUEST_SUCCESS1"){
+        this._spinner();
+        this.store.dispatch({ type: "REQUEST_DATA1", payload:{loading:true}}); 
+        this.store.dispatch({ type: "REQUEST_DATA2", payload:{loading:true}}); 
+        this.store.dispatch({ type: "REQUEST_DATA3", payload:{loading:true}}); 
+      }
+    });
+    this.subscription.unsubscribe();
   }
   ionViewDidEnter(){
     this._subscribeRedux();

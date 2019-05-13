@@ -3,7 +3,6 @@ let initialState={
     actionStatus:null
 };
 export function  dataReducer(state: any = initialState, action){
-    // console.log(action.payload);
     switch (action.type){
         case "REQUEST_DATA1": {
             return {...initialState,actionStatus:action.type}

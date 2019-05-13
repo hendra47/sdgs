@@ -1,7 +1,7 @@
 let global = {
     server: "dev",  //dev, production  
-    api_url_dev: "http://ngopii.com/sdgc/public/api/",
-    api_url_prod: "http://ngopii.com/sdgc/public/api/",
+    api_url_dev: "http://sdgacademy.web.id/sdgc/public/api/",
+    api_url_prod: "http://sdgacademy.web.id/sdgc/public/api/",
     api_url_image:"",    
     api_cloudinary:"https://api.cloudinary.com/v1_1/dfsxhf7dz/image/upload",    
     upload_preset:"eiknnxtk",

@@ -3,6 +3,10 @@ page-detail {
         border-color: none;
         background: transparent;
     }
+    .toolbar-background-ios {
+        border-color: none;
+        background: transparent;
+    }
     .search-icon{
         height: 34px;
     }
@@ -47,5 +51,11 @@ page-detail {
         margin-left: 16px;
         margin-top:8px;
         margin-bottom:8px;
+    }
+    .segment-button.segment-activated {
+        border-color: #2335d3;
+        color: #2335d3;
+        opacity: 1;
+        background: #8c8c8c;
     }
 }

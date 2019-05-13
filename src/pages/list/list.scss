@@ -55,9 +55,15 @@ page-list {
      }
     .card-content-ios {
         padding: 0 !important;
-        max-height: 145px;
-        min-height: 145px;
-        min-width: 145px;
-        max-width: 145px;
+        max-height: 168px;
+        min-height: 168px;
+        min-width: 168px;
+        max-width: 168px;
+     }
+     .card-undp{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
      }
 }
