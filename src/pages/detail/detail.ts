@@ -34,7 +34,7 @@ export class DetailPage {
   constructor(private store: Store<any>, public modalCtrl: ModalController,private platform: Platform,private statusBar: StatusBar,private _zone: NgZone,   public navCtrl: NavController, public navParams: NavParams) {
     this._zone.run(() =>{
       this.detail=this.navParams.get("item");
-      // console.log(this.detail);
+      console.log(this.detail);
       this.icon="assets/imgs/sdgc"+this.detail.id+".png"; 
       this.arrColor=list;       
     });
